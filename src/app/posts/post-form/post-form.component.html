@@ -1,0 +1,23 @@
+<form [formGroup]="form">
+  <div class="inputs">
+    <mat-form-field appearance="fill">
+      <mat-label>Title:</mat-label>
+      <input matInput formControlName="title">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Description:</mat-label>
+      <textarea matInput formControlName="body"></textarea>
+    </mat-form-field>
+  </div>
+  <div class="btn">
+    <button
+      mat-button
+      mat-raised-button
+      color="accent"
+      [disabled]="form.invalid"
+      (click)="createPost()"
+      >Create a post
+    </button>
+  </div>
+</form>
