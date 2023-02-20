@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is created for training needs in order to practice and improve coding skills by creating an Angular App integrated with a free API (https://jsonplaceholder.typicode.com/). It may be expanded with new features and related libs installed in the future.
+This project is created for training needs in order to practice and improve coding skills. It's an Angular App integrated with a free API (https://jsonplaceholder.typicode.com/), which allows user to interact with Angular Forms, create/remove cards with informational posts. It may be expanded with new features and related libs installed in future.
 The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
 
 ## Technologies
