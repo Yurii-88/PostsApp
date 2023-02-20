@@ -1,6 +1,17 @@
-# TestApp
+# PostsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
+## Introduction
+
+This project is created for training needs in order to practice and improve coding skills by creating an Angular App integrated with a free API (https://jsonplaceholder.typicode.com/). It may be expanded with new features and related libs installed in the future.
+The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.5.
+
+## Technologies
+
+The main technologies used in this project are:
+* Angular framework:  v.15.1.5
+* TypeScript programming language: v.4.9.4
+* Angular Material UI component library: v.15.1.4
+* RxJS: v.7.8.0
 
 ## Development server
 
