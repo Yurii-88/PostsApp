@@ -1,7 +1,6 @@
-/* tslint:disable:no-unused-variable */
+import { HttpClient, HttpHandler } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { PostService } from '../services/post.service';
 
 import { PostListComponent } from './post-list.component';
 
@@ -11,7 +10,8 @@ describe('PostListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PostListComponent ]
+      declarations: [ PostListComponent ],
+      providers: [PostService, HttpClient, HttpHandler]
     })
     .compileComponents();
   }));

@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.showSpinner = true;
     this.posts = this.postService.getPosts().pipe(tap(() => this.showSpinner = false));
+    this.postService.initializePosts();
   }
 
   toggleForm(): void {

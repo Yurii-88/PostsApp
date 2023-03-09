@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Post } from '../model/interfaces';
 import { PostService } from '../services/post.service';
 
 @Component({
@@ -16,7 +17,8 @@ export class PostFormComponent {
   constructor(private fb: FormBuilder, private postService: PostService) { }
 
   createPost(): void {
-    this.postService.addPost(this.form.value);
+    const post = this.form.value as Post;
+    this.postService.addPost(post);
     this.form.reset();
   }
 }
