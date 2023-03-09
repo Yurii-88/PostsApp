@@ -1,0 +1,15 @@
+:host {
+  form, .inputs {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+
+    .btn {
+      display: flex;
+      justify-content: center;
+        button:hover {
+          cursor: pointer;
+        }
+    }
+  }
+}
