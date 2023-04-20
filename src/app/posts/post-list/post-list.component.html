@@ -1,0 +1,12 @@
+<div class="posts" *ngIf="posts?.length; else noPosts">
+  <div *ngFor="let post of posts; let i = index">
+    <app-post-card
+      *ngIf="post"
+      [post]="post"
+      (onRemove)="removePost(i)"
+    ></app-post-card>
+  </div>
+</div>
+<ng-template #noPosts>
+  <p>No posts... Create a new one!</p>
+</ng-template>

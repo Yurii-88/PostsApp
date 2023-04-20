@@ -1,0 +1,18 @@
+<mat-card>
+  <div class="header">
+    <span>
+      <strong>Title</strong>:
+    </span>
+    <button mat-button matTooltip="Remove a card" (click)="removePost()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+  <div>{{ post.title }}</div>
+  <br>
+  <ng-container>
+    <span>
+      <strong>Description</strong>:
+    </span>
+    <div>{{ post.body }}</div>
+  </ng-container>
+</mat-card>
